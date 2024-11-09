@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наші улюбленці</title>
+    <title>Слайдер зображень</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>НАШІ УЛЮБЛЕНЦІ ДУЖЕ ГАРНІ</h1>
-    <div class="container">
-        <div class="image">
-            <img src="img/cat.jpg" alt="Cat">
-        </div>
-        <div class="text">
-            <p>Котики такі прикольні, вони такі ніжні, ласкаві, потребують любові. Вони завжди знайдуть спосіб підняти настрій своєю милотою. Коти - справжні компаньйони, які завжди готові поділитися своєю теплотою та ласкою. Їх муркотіння є справжньою терапією після важкого дня.</p>
-        </div>
+    <div class="slider">
+        <div class="arrow left" onclick="prevImage()">&#10094;</div>
+        <img id="slider-image" src="img/GranitPM/MG_1.jpg" alt="Image">
+        <div class="arrow right" onclick="nextImage()">&#10095;</div>
     </div>
-    <div class="search-container">
-        <!-- Google Custom Search Engine код -->
-        <script async src="https://cse.google.com/cse.js?cx=d7c3befab48644ff4"></script>
-        <div class="gcse-search"></div>
-    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
